@@ -1,0 +1,91 @@
+/* 1. Universal selector */
+{
+    /* border:1 px solid red; */
+}
+
+/* tag Selector */
+h1{
+    background-color: green;
+}
+
+/* id Selector # */
+#a {
+    color: red;
+    background-color:yellow;
+}
+
+/* class selector . */
+.b{
+    /* color:blue; */
+    border:10px solid;
+}
+/*Group Selector ,*/
+h1,
+h2{
+    color: blueviolet;
+}
+
+/* descendant selector */
+div p{
+    color :red;
+    background-color: yellow;
+}
+
+/*child selector > */
+div > p{
+    color: green;
+
+}
+/* attribute selector */
+/* button [type="submit"]{
+    background-color:blue;
+    color:white;
+    /* pseudo classes : */
+    li:nth-child(2){
+        color: red;
+        font-size: 24px;
+    }
+
+    li:hover{
+        color: yellow;
+        background-color: red;
+        font-size: 38px;
+    }
+
+    /* pseudo element ::*/
+
+    #r::before{
+        content:"Written by css ";
+    }
+    .b::first-letter{
+        font-size:48px;
+        color: red;
+    }
+    #q{
+        display: block;
+    } */
+
+    *{
+        paddinig: 0;
+        margin: 0;
+    }
+
+    /* Box model
+    */
+    h1:nth-child(1){
+        border:3px solid red;
+        /*padding: 30px; */
+        /* padding: 10px 20px 40px 60px; */
+        /* padding: 20px 80px;
+        margin: 80px; */
+    }
+
+    #q::first-letter{
+        font-size:48px;
+        color: red;
+    }
+
+    #q::first-line{
+        color: yellow;
+        font-size: 32px;
+    }

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="learning html" />
+    <meta name="keywords" content="html,css,js" />
+    <meta name="author" content="Aastha" />
+    <meta http-equiv="refresh" content="8" />
+    <title>HTML</title>
+  </head>
+  <body>
+    <h1>My HTML only Website</h1>
+    <h3>simple site only with html</h3>
+    <ul>
+      <li><a href="#a">home</a></li>
+      <li><a href="#b">about</a></li>
+      <li><a href="#c">author</a></li>
+      <li><a href="#d">contact</a></li>
+    </ul>
+    <h2 id="a">Welcome</h2>
+    <p>
+      this page demonstrates layout and domain using <i>only</i> HTML tages. use
+      headings,lists, tables, and forms to present information without css.
+    </p>
+    <h2 id="b">About this page</h2>
+    <p>
+      this page uses sementic tags:&lt;header&gt,&lt;nav&gt; &lt;article&gt;
+    </p>
+    <h3>Key Points</h3>
+    <ol>
+      <li>readable structure</li>
+      <li>no external styles</li>
+      <li>works well</li>
+    </ol>
+    <h2>Features (HTML-only)</h2>
+    <!-- <p>Semantic layout</p> -->
+    <dl>
+      <dt>Semantic layout</dt>
+      <dd>clear structure</dd>
+    </dl>
+    <dl>
+      <dt>accessible navigation</dt>
+      <dd>keyboard and screen reader friendly</dd>
+    </dl>
+    <dl>
+      <dt>forms and tables</dt>
+      <dd>collect input and show tabular data using plain html</dd>
+    </dl>
+    <h2>sample data table</h2>
+    <p>product list</p>
+    <table border="2">
+      <tr>
+        <th>product</th>
+        <th>category</th>
+        <th>price (INR)</th>
+      </tr>
+      <tr>
+        <td>notebook</td>
+        <td>stationary</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>pencil</td>
+        <td>stationary</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>notebook</td>
+        <td>stationary</td>
+        <td>30</td>
+      </tr>
+    </table>
+    <h3>Quick links</h3>
+    <!-- <p>if you like to get in touch, fill this simple form (no styling).</p> -->
+    <ul>
+      <li><a href="">see features</a></li>
+      <li><a href="">contact us</a></li>
+      <li><a href="">more about this demo</a></li>
+    </ul>
+    <h2>Contact</h2>
+    <p>if you like to get in touch, fill this simple form (no styling).</p>
+    <fieldset>
+      <legend id="d">contact</legend>
+      <label for="">name:</label>
+      <input
+        type="text"
+        id="name"
+        minlength="5"
+        maxlength="10"
+        required
+      /><br /><br />
+      <label for="">email:</label>
+      <input type="email" required /><br /><br />
+      <label for="">message: </label>
+      <!-- <text type="text" maxlength="30" required /><br /><br /> -->
+      <!-- <input type="number" min="3" max="6" required> -->
+       <textarea name="" id=""></textarea>
+      <br /><br />
+      <p>prefered contact:</p>
+      <input type="radio" />email<br />
+      <input type="radio" />phone<br /><br />
+      <button type="submit">submit</button>
+    </fieldset>
+  </body>
+  <footer>&copy; My html only website</footer>
+</html>

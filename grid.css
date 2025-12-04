@@ -1,0 +1,145 @@
+.gridContainer{
+    border: 1px solid red;
+    height :90vh;
+    display: grid;
+    /* grid-template-columns: 100px 200px 300px; */
+    grid-template-rows: 100px 100px; */
+    /*  grid-template-columns: 200px 200px 200px 200px;
+    /* grid-template-columns: 100px repeat(4, 200px); */
+    grid-template-columns: repeat(4,100px)\
+    grid-template-rows: 100px 100px;
+    /* row-gap: 10px; */
+     /* column-gap: 10px; */
+     gap: 10px;
+     /* justify-content: space-evenly; */
+     /* align-content: center; */
+}
+
+
+.item{
+    color: red;
+    border: 1px solid;
+    background-color: yellow;
+    padding: 30px 40px;
+}
+
+.item:nth-child(1){
+    /* grid-column-start: 3;
+    grid-column-end: -1; */
+    grid-column: 3/-1;
+    /*grid-row-start: 2;
+    grid-row-end: 3; */
+    grid-row: 2/3;
+}
+
+.team:nth-child(8){
+    grid-column:2/3;
+    grid-row:1/2;
+}
+
+body{
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "head head head" "navbar mainContent Aside" "footer footer footer"
+}
+
+header{
+    grid-area: head;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    /* height: 70px; */
+}
+
+nav{
+    grid-area: navbar;
+    background-color: green;
+    color: yellow;
+    border: 1px solid;
+}
+main{
+    grid-area: mainContent;
+    background-color: yellow;
+    color: red;
+    border: 1px solid;
+}
+aside{
+    grid-area: Aside;
+    background-color: blue;
+    color: green;
+    border : 1px solid;
+}
+
+footer{
+    grid-area:Footer;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.flexItem{
+    background-color: yellow;
+    color: red;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+header:hover{
+    transform: translateY(-10px);
+    /* transform: translateX(10px); */
+}
+
+
+/* 576px less than 576px for mobile */
+/ 768px between 577px - 768px tabs */
+/* 992px between  769px-992px small screens */
+/* 1200px between 993px-1200px normal screens */
+/* 1200px greater then 1200px for Extra large screens */
+
+*media(max-width: 576px){
+    body{
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: 
+      "head head head"
+    "navbar mainContent Aside" 
+    "footer footer footer"
+} 
+aside{
+    display: none;
+}                 
+.flexItem{
+    font-size: 14px;
+    height: 50px;
+    width: 50px;
+}          
+main{
+    background-color: red;
+}
+}
+
+@media(min-width: 577px) and(max-width: 768px){
+    body{
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+    "head head head"
+    "navbar mainContent Aside" 
+    "footer footer footer"
+}
+nav{
+    display: none;
+}
+}
+
+@media(min-width: 769px) and (max-width: 992px){
+    body{
+    grid-template-areas:
+    "head head head"
+    "navbar mainContent Aside" 
+    "footer footer footer"
+    }
+}
